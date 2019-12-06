@@ -1,0 +1,33 @@
+import { Meta, Typeset } from "@storybook/addon-docs/blocks";
+import { Text } from "./Text";
+import { theme } from "../theme";
+
+<Meta title="Design System/Text" />
+
+# Typography
+
+<Text type="h3" fontWeight="bold" color={theme.neutral.two}>
+  Hello World
+</Text>
+
+```
+<Text type="h3" fontWeight="bold" color={theme.neutral.two}>
+  Hello World
+</Text>
+```
+
+<Typeset
+  fontSizes={[
+    Number(theme.typography.size.s1),
+    Number(theme.typography.size.s2),
+    Number(theme.typography.size.s3),
+    Number(theme.typography.size.m1),
+    Number(theme.typography.size.m2),
+    Number(theme.typography.size.m3),
+    Number(theme.typography.size.l1),
+    Number(theme.typography.size.l2),
+    Number(theme.typography.size.l3)
+  ]}
+  style={{ color: theme.neutral.two }}
+  fontWeight={theme.typography.weight.black}
+/>
