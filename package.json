@@ -1,7 +1,7 @@
 {
-  "name": "@lucasstettner/components",
-  "version": "0.1.9",
-  "description": "Lucas's Personal Component Library",
+  "name": "@getlaunchpad/components",
+  "version": "0.0.1",
+  "description": "The launchpad component library",
   "source": "src/index.ts",
   "main": "dist/lucas-components.js",
   "umd:main": "dist/lucas-components.umd.js",
@@ -13,7 +13,6 @@
     "build:watch": "microbundle watch --jsx React.createElement",
     "build": "microbundle --jsx React.createElement",
     "lint": "eslint src --ext .js,.ts,.tsx",
-    "test": "yarn run lint",
     "now-build": "build-storybook -c .storybook -o .storybook-dist",
     "prepublishOnly": "yarn run build"
   },
