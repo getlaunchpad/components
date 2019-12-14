@@ -3,7 +3,6 @@ import { configure, addDecorator, addParameters } from "@storybook/react";
 import { BaseStyles } from "../src";
 import { withA11y } from "@storybook/addon-a11y";
 import "storybook-chromatic";
-import { loadFontsForStorybook } from "../src/utils/loadFontsForStorybook";
 
 addParameters({
   options: {
@@ -27,5 +26,3 @@ configure(
   ],
   module
 );
-
-loadFontsForStorybook();

@@ -1,185 +1,155 @@
-import { css } from "styled-components";
-
-// Brand
-
 const primary = {
-  one: "#19216C",
-  two: "#2D3A8C",
-  three: "#35469C",
-  four: "#4055A8",
-  five: "#4C63B6",
-  six: "#647ACB",
-  seven: "#7B93DB",
-  eight: "#98AEEB",
-  nine: "#BED0F7",
-  ten: "#E0E8F9"
+  one: "#E0E8F9",
+  two: "#BED0F7",
+  three: "#98AEEB",
+  four: "#7B93DB",
+  five: "#647ACB",
+  six: "#4C63B6",
+  seven: "#4055A8",
+  eight: "#35469C",
+  nine: "#2D3A8C",
+  ten: "#19216C"
 };
 
 const neutral = {
-  one: "#1F2933",
-  two: "#323F4B",
-  three: "#3E4C59",
-  four: "#52606D",
-  five: "#616E7C",
-  six: "#7B8794",
-  seven: "#9AA5B1",
-  eight: "#CBD2D9",
-  nine: "#E4E7EB",
-  ten: "#F5F7FA"
-};
-
-const error = {
-  one: "#610404",
-  two: "#780A0A",
-  three: "#911111",
-  four: "#A61B1B",
-  five: "#BA2525",
-  six: "#D64545",
-  seven: "#E66A6A",
-  eight: "#F29B9B",
-  nine: "#FACDCD",
-  ten: "#FFEEEE"
+  one: "#F5F7FA",
+  two: "#E4E7EB",
+  three: "#CBD2D9",
+  four: "#9AA5B1",
+  five: "#7B8794",
+  six: "#616E7C",
+  seven: "#52606D",
+  eight: "#3E4C59",
+  nine: "#323F4B",
+  ten: "#1F2933"
 };
 
 const success = {
-  one: "#05400A",
-  two: "#0E5814",
-  three: "#207227",
-  four: "#2F8132",
-  five: "#3F9142",
-  six: "#57AE5B",
-  seven: "#7BC47F",
-  eight: "#A3D9A5",
-  nine: "#C1EAC5",
-  ten: "#E3F9E5"
+  one: "#EFFCF6",
+  two: "#C6F7E2",
+  three: "#8EEDC7",
+  four: "#65D6AD",
+  five: "#3EBD93",
+  six: "#27AB83",
+  seven: "#199473",
+  eight: "#147D64",
+  nine: "#0C6B58",
+  ten: "#014D40"
 };
 
 const warn = {
-  one: "#513C06",
-  two: "#7C5E10",
-  three: "#A27C1A",
-  four: "#C99A2E",
-  five: "#E9B949",
-  six: "#F7D070",
-  seven: "#F9DA8B",
-  eight: "#F8E3A3",
-  nine: "#FCEFC7",
-  ten: "#FFFAEB"
+  one: "#FFFBEA",
+  two: "#FFF3C4",
+  three: "#FCE588",
+  four: "#FADB5F",
+  five: "#F7C948",
+  six: "#F0B429",
+  seven: "#DE911D",
+  eight: "#CB6E17",
+  nine: "#B44D12",
+  ten: "#8D2B0B"
 };
 
-export const fontUrl = "https://use.typekit.net/slh4nfz.css";
+const error = {
+  one: "#FFE3E3",
+  two: "#FFBDBD",
+  three: "#FF9B9B",
+  four: "#F86A6A",
+  five: "#EF4E4E",
+  six: "#E12D39",
+  seven: "#CF1124",
+  eight: "#AB091E",
+  nine: "#8A041A",
+  ten: "#610316"
+};
 
-export const spacing = {
+const info = {
+  one: "#E3F8FF",
+  two: "#B3ECFF",
+  three: "#81DEFD",
+  four: "#5ED0FA",
+  five: "#40C3F7",
+  six: "#2BB0ED",
+  seven: "#1992D4",
+  eight: "#127FBF",
+  nine: "#0B69A3",
+  ten: "#035388"
+};
+
+const spacing = {
   padding: {
-    small: 10,
-    medium: 20,
-    large: 30
+    small: 4,
+    medium: 8,
+    large: 16
   },
   borderRadius: {
     small: 5,
-    default: 10
+    default: 14
   }
 };
-
-const typography = {
-  type: {
-    primary: '"Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif',
-    code:
-      '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
-  },
-  weight: {
-    regular: "400",
-    bold: "700",
-    extrabold: "800",
-    black: "900"
-  },
-  size: {
-    s1: "12",
-    s2: "14",
-    s3: "16",
-    m1: "20",
-    m2: "24",
-    m3: "28",
-    l1: "32",
-    l2: "40",
-    l3: "48",
-    code: "90"
-  }
-};
-
-const breakpoint = 600;
-const pageMargin: any = "5.55555";
-
-const pageMargins = css`
-  padding: 0 ${spacing.padding.medium}px;
-  @media (min-width: ${breakpoint * 1}px) {
-    margin: 0 ${pageMargin * 1}%;
-  }
-  @media (min-width: ${breakpoint * 2}px) {
-    margin: 0 ${pageMargin * 2}%;
-  }
-  @media (min-width: ${breakpoint * 3}px) {
-    margin: 0 ${pageMargin * 3}%;
-  }
-  @media (min-width: ${breakpoint * 4}px) {
-    margin: 0 ${pageMargin * 4}%;
-  }
-`;
 
 export const theme = {
   primary,
   neutral,
-  typography,
-  breakpoint,
-  pageMargin,
-  pageMargins,
+  spacing,
   brand: {
-    default: primary.six,
-    text: primary.one,
-    wash: primary.ten,
-    border: primary.nine
+    default: primary.five,
+    text: primary.ten,
+    wash: primary.one,
+    border: primary.two
   },
   text: {
-    primary: neutral.one,
-    secondary: neutral.two,
-    tertiary: neutral.three
+    primary: neutral.ten,
+    secondary: neutral.nine,
+    tertiary: neutral.eight
   },
   ui: {
-    wash: neutral.ten,
-    cardWash: neutral.five,
-    border: neutral.three
+    wash: neutral.one,
+    border: neutral.two,
+    background: "#2F3646"
   },
   accent: {
     error: {
       ...error,
-      default: error.three,
-      text: error.one,
-      wash: error.ten,
-      border: error.eight
+      default: error.five,
+      text: error.ten,
+      wash: error.one,
+      border: error.three
     },
     success: {
       ...success,
-      default: success.three,
-      text: success.one,
-      wash: success.ten,
-      border: success.eight
+      default: success.five,
+      text: success.ten,
+      wash: success.one,
+      border: success.three
     },
     warn: {
       ...warn,
-      default: warn.three,
-      text: warn.one,
-      wash: warn.ten,
-      border: warn.eight
+      default: warn.five,
+      text: warn.ten,
+      wash: warn.one,
+      border: warn.three
+    },
+    info: {
+      ...info,
+      default: info.five,
+      text: info.ten,
+      wash: info.one,
+      border: info.three
     }
   },
   shadow: {
-    small: "0px 1px 2px rgba(0, 0, 0, 0.02)",
-    medium: "0px 1px 4px rgba(0, 0, 0, 0.04)",
-    large: "0px 1px 8px rgba(0, 0, 0, 0.08)"
+    small: "0px 4px 16px rgba(105, 104, 142, 0.12)",
+    medium:
+      "0px 5px 30px rgba(67, 67, 67, 0.12), 0px 4px 16px rgba(130, 130, 130, 0.07)",
+    large: "0px 15px 70px rgba(3, 6, 33, 0.21)",
+    xLarge: "0px 35px 60px rgba(1, 4, 31, 0.35)"
   },
   animation: {
     in: "0.2s ease-in",
     out: "0.2s ease-out"
   },
-  fonts: "'Graphik'"
+  fonts: {
+    primary: '"Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif'
+  }
 };

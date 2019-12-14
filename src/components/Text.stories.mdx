@@ -6,7 +6,7 @@ import { theme } from "../theme";
 
 # Typography
 
-<Text type="h3" fontWeight="bold" color={theme.neutral.two}>
+<Text type="h3" fontWeight="bold" color={theme.neutral.eight}>
   Hello World
 </Text>
 
@@ -17,17 +17,8 @@ import { theme } from "../theme";
 ```
 
 <Typeset
-  fontSizes={[
-    Number(theme.typography.size.s1),
-    Number(theme.typography.size.s2),
-    Number(theme.typography.size.s3),
-    Number(theme.typography.size.m1),
-    Number(theme.typography.size.m2),
-    Number(theme.typography.size.m3),
-    Number(theme.typography.size.l1),
-    Number(theme.typography.size.l2),
-    Number(theme.typography.size.l3)
-  ]}
-  style={{ color: theme.neutral.two }}
-  fontWeight={theme.typography.weight.black}
+  fontSizes={[14, 16, 18, 20, 24, 36, 48, 60, 72]}
+  style={{ color: theme.neutral.eight, fontFamily: theme.fonts.primary }}
+  fontWeight={600}
+  fontFamily="'Graphik'"
 />

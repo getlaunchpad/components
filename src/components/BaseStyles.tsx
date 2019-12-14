@@ -7,7 +7,7 @@ export const BaseStyles = createGlobalStyle`
   html {
     font-size: 16px;
     line-height: 1.5;
-    background-color: ${theme.ui.wash};
+    background-color: ${theme.ui.background};
     color: ${theme.text.primary};
     padding: 0;
     margin: 0;
@@ -15,6 +15,8 @@ export const BaseStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
       sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
+
+  /* NextJS and NSProgress */
 
   html,
   body,

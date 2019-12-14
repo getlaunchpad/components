@@ -20,7 +20,7 @@ export const Text = ({ type = "span", children, ...rest }: TextProps) => {
     ${color}
     ${fontSize}
     ${fontWeight}
-    font-family: ${theme.fonts}
+    font-family: ${theme.fonts.primary}
   `;
   const Component = React.createElement(StyledComponent, {
     children,
