@@ -1,10 +1,10 @@
 {
   "name": "@getlaunchpad/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The launchpad component library",
   "source": "src/index.ts",
-  "main": "dist/lucas-components.js",
-  "umd:main": "dist/lucas-components.umd.js",
+  "main": "dist/getlaunchpad-components.js",
+  "umd:main": "dist/getlaunchpad-components.umd.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
   "private": false,
