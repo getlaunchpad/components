@@ -1,0 +1,34 @@
+import { Meta, Preview, Story } from "@storybook/addon-docs/blocks";
+import { Primary, Secondary } from "./";
+
+import { theme } from "../../shared/theme";
+
+<Meta title="Design System|Colors" />
+
+# Button
+
+Various buttons used across the launchpad design system.
+Each Button has a outline variation, you can use them by adding `outline={true}`
+
+### Primary Buttons
+
+<Preview withToolbar>
+  <Story name="primary">
+    <>
+      <Primary outline={false}>Start free trial</Primary>
+      <Primary outline={true} style={{marginLeft: 10}}>Start free trial</Primary>
+    </>
+  </Story>
+</Preview>
+
+### Secondary Buttons
+
+<Preview withToolbar>
+  <Story name="secondary">
+    <>
+      <Secondary outline={false}>Start free trial</Secondary>
+      <Secondary outline={true} style={{marginLeft: 10}}>Start free trial</Secondary>
+    </>
+  </Story>
+</Preview>
+
