@@ -76,22 +76,37 @@ const info = {
   ten: "#035388"
 };
 
-const spacing = {
-  padding: {
-    small: 4,
-    medium: 8,
-    large: 16
+const typography = {
+  type: {
+    primary:
+      '"Inter", -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;',
+    code:
+      '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace'
   },
-  borderRadius: {
-    small: 5,
-    default: 14
+  weight: {
+    regular: "400",
+    bold: "700",
+    extrabold: "800",
+    black: "900"
+  },
+  size: {
+    s1: "12",
+    s2: "14",
+    s3: "16",
+    m1: "20",
+    m2: "24",
+    m3: "28",
+    l1: "32",
+    l2: "40",
+    l3: "48",
+    code: "90"
   }
 };
 
 export const theme = {
   primary,
   neutral,
-  spacing,
+  typography,
   brand: {
     default: primary.five,
     text: primary.ten,
@@ -105,37 +120,36 @@ export const theme = {
   },
   ui: {
     wash: neutral.one,
-    border: neutral.two,
-    background: "#2F3646"
+    border: neutral.two
   },
   accent: {
     error: {
-      ...error,
       default: error.five,
       text: error.ten,
       wash: error.one,
-      border: error.three
+      border: error.three,
+      ...error
     },
     success: {
-      ...success,
       default: success.five,
       text: success.ten,
       wash: success.one,
-      border: success.three
+      border: success.three,
+      ...success
     },
     warn: {
-      ...warn,
       default: warn.five,
       text: warn.ten,
       wash: warn.one,
-      border: warn.three
+      border: warn.three,
+      ...warn
     },
     info: {
-      ...info,
       default: info.five,
       text: info.ten,
       wash: info.one,
-      border: info.three
+      border: info.three,
+      ...info
     }
   },
   shadow: {
@@ -143,13 +157,12 @@ export const theme = {
     medium:
       "0px 5px 30px rgba(67, 67, 67, 0.12), 0px 4px 16px rgba(130, 130, 130, 0.07)",
     large: "0px 15px 70px rgba(3, 6, 33, 0.21)",
-    xLarge: "0px 35px 60px rgba(1, 4, 31, 0.35)"
+    xLarge: "0px 35px 60px rgba(1, 4, 31, 0.35)",
+    brand:
+      "0px 5px 30px rgba(116, 138, 159, 0.1), 0px 2px 8px rgba(130, 154, 177, 0.2)"
   },
   animation: {
     in: "0.2s ease-in",
     out: "0.2s ease-out"
-  },
-  fonts: {
-    primary: '"Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif'
   }
 };
