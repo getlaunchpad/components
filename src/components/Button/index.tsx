@@ -39,7 +39,7 @@ export const Primary = styled.button<ButtonProps>`
   :hover {
     ${hover}
     background: ${({ outline }) =>
-      outline ? theme.primary.one : theme.primary.ten}; 
+      outline ? theme.primary.one : theme.primary.four}; 
   }
 
   :active {
